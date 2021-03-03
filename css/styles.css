@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
-/* .rounded-circle {
-  border-radius: 50%; */
-/* } */
 .navbar {
   background: rgba(0, 0, 0, 0.4);
 }
@@ -13,13 +10,12 @@
   font-size: 1.3em;
   margin-left: 5%;
 }
-.logo {
-  border-radius: 50%;
-}
+
 .navbar-text {
   /* font-family: ; */
   display: block;
   position: relative;
+
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -45,7 +41,7 @@
 }
 #reserve:hover {
   color: #ffffff;
-  background: rgba(31,181,40,0.5)
+  background: rgba(31, 34, 31, 0.6)
 }
 .navbar .nav-item a {
   font-family: ;
