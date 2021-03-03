@@ -1,21 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 .navbar {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
 }
-.navbar .navbar-brand {
-
+.navbar-brand {
   font-weight: bolder;
   color: #cdcdcd;
   font-size: 1.3em;
   margin-left: 5%;
 }
-
 .navbar-text {
-  /* font-family: ; */
   display: block;
   position: relative;
-
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -30,18 +26,18 @@
 .nav-item {
   margin-left: 30px;
 }
-#reserve {
+#order {
   /* font-family: ; */
   font-weight: 700;
   color: #cdcdcd;
   border: solid #ffffff;
   border-radius: 50px;
   margin-right: 50px;
-  margin-left: 600px;
+  margin-left: 30px;
 }
 #reserve:hover {
   color: #ffffff;
-  background: rgba(31, 34, 31, 0.6)
+  background: rgba(31, 34, 31, 0.6);
 }
 .navbar .nav-item a {
   /* font-family: ; */
@@ -119,7 +115,9 @@
   }
 }
 /* Contacts Section */
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -128,8 +126,8 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
+input[type="submit"] {
+  background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -137,7 +135,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 #contact-us {
