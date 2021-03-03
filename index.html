@@ -110,13 +110,14 @@
           <img src="images/street.jpg" style="width: 100%" />
         </div>
         <div class="column" id="contact-form">
-          <form action="/action_page.php">
+          <form id="form">
             <label for="fname">First Name</label>
             <input
               type="text"
               id="fname"
               name="firstname"
               placeholder="Your name.."
+              required
             />
             <label for="lname">Last Name</label>
             <input
@@ -124,6 +125,7 @@
               id="lname"
               name="lastname"
               placeholder="Your last name.."
+              required
             />
             <label for="city">City</label>
             <select id="city" name="city">
@@ -136,6 +138,7 @@
               id="subject"
               name="subject"
               placeholder="Write something.."
+              required
               style="height: 170px"
             ></textarea>
             <input type="submit" value="Submit" />
@@ -156,4 +159,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="js/scripts.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </html>
