@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-
+.body {
+  font-family: "Playfair Display", serif;
+}
 .navbar {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -27,7 +28,6 @@
   margin-left: 30px;
 }
 #order {
-  /* font-family: ; */
   font-weight: 700;
   color: #cdcdcd;
   border: solid #ffffff;
@@ -58,6 +58,9 @@
 .background {
   background: url(/images/1.jpg) bottom center / cover no-repeat;
   min-height: 981px;
+}
+.milestones {
+  margin-top: 50px;
 }
 #team-info {
   box-sizing: border-box;
