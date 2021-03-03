@@ -43,7 +43,7 @@
             <a class="nav-link" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+            <a class="nav-link" href="#contact-us">Contacts</a>
           </li>
           <li id="reserve-button">
             <button onclick="submit()" id="reserve" class="btn reserve-btn">
@@ -97,6 +97,49 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="contact-us">
+      <div style="text-align: center">
+        <h2>Contact Us</h2>
+        <p>Swing by for memorable pizza experience, or leave us a message:</p>
+      </div>
+      <div class="row">
+        <div class="column" id="contact-form">
+          <img src="images/street.jpg" style="width: 100%" />
+        </div>
+        <div class="column" id="contact-form">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="nairobi">Nairobi</option>
+              <option value="nakuru">Nakuru</option>
+              <option value="eldoret">Eldoret</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
     </div>
