@@ -68,8 +68,16 @@
   padding-top: 60px;
 }
 #menu-list {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 80px;
+}
+.menu-footer {
+  background: url(/images/8.jpg);
+  width: 100%;
+  min-height: 30px;
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 60px;
 }
 .milestones {
   margin-top: 50px;
