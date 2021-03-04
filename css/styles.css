@@ -74,11 +74,13 @@
 .menu-footer {
   background: url(/images/8.jpg);
   width: 100%;
-  min-height: 30px;
+  max-height: 80px;
   text-align: center;
   margin-top: 80px;
-  padding-top: 60px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
+
 .milestones {
   margin-top: 50px;
 }
