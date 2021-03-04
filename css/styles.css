@@ -59,6 +59,14 @@
   background: url(/images/1.jpg) bottom center / cover no-repeat;
   min-height: 981px;
 }
+.menu-bg {
+  background: url(/images/8.jpg);
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 60px;
+}
 .milestones {
   margin-top: 50px;
 }
