@@ -14,155 +14,165 @@
     <!-- Add custom CSS -->
     <link rel="stylesheet" href="css/order.css" />
     <link />
+
+    <link
+      rel="icon"
+      class="rounded-circle"
+      id="shortcut-icon"
+      href="images/pizza.png"
+      type="img/jpg"
+    />
     <title>Proceed to Order</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-75">
-          <div class="container">
-            <form action="/action_page.php">
-              <div class="row">
-                <div class="col-50">
-                  <h3>Enter your order details</h3>
-                  <label for="pizza-name"
-                    ><i class="fa fa-shopping-cart order"></i>Type of
-                    pizza</label
-                  >
-                  <input
-                    class="form-control drop"
-                    type="text"
-                    id="pizza-name"
-                    name="pizza"
-                    placeholder="e.g. Hawaiian"
-                  />
-                  <label for="size"><i class="fa fa-size"></i>Size</label>
-                  <input
-                    type="text"
-                    id="size"
-                    name="pizza-size"
-                    placeholder="e.g. Small"
-                  />
-                  <label for="crust"><i class="fa fa-kind"></i>Crust</label>
-                  <input
-                    type="text"
-                    id="kind-of-crust"
-                    name="crust"
-                    placeholder="e.g. Crispy"
-                  />
-                  <label for="toppings"
-                    ><i class="fa fa-toppings"></i>Topping(s)</label
-                  >
-                  <input
-                    type="text"
-                    id="topping"
-                    name="toppings"
-                    placeholder="e.g. Extra cheese"
-                  />
-
-                  <div class="row">
-                    <div class="col-50">
-                      <label for="quantity">Quantity</label>
-                      <input
-                        type="number"
-                        id="quantity"
-                        name="pizza-quantity"
-                        placeholder="1"
-                      />
+    <div class="order-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Enter your order details</h3>
+                    <label for="pizza-name"
+                      ><i class="fa fa-shopping-cart order"></i>Type of
+                      pizza</label
+                    >
+                    <input
+                      class="form-control drop"
+                      type="text"
+                      id="pizza-name"
+                      name="pizza"
+                      placeholder="e.g. Hawaiian"
+                    />
+                    <label for="size"><i class="fa fa-size"></i>Size</label>
+                    <input
+                      type="text"
+                      id="size"
+                      name="pizza-size"
+                      placeholder="e.g. Small"
+                    />
+                    <label for="crust"><i class="fa fa-kind"></i>Crust</label>
+                    <input
+                      type="text"
+                      id="kind-of-crust"
+                      name="crust"
+                      placeholder="e.g. Crispy"
+                    />
+                    <label for="toppings"
+                      ><i class="fa fa-toppings"></i>Topping(s)</label
+                    >
+                    <input
+                      type="text"
+                      id="topping"
+                      name="toppings"
+                      placeholder="e.g. Extra cheese"
+                    />
+  
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="quantity">Quantity</label>
+                        <input
+                          type="number"
+                          id="quantity"
+                          name="pizza-quantity"
+                          placeholder="1"
+                        />
+                      </div>
                     </div>
                   </div>
+  
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Payment Methods</label>
+                    <div class="payment-container">
+                      <ol>
+                        <li>Card</li>
+                        <li>Mobile money</li>
+                        <li>Cash</li>
+                      </ol>
+                    </div>
+                    <br />
+                    <label for=""><strong>For card:</strong></label>
+                    <label for="cname">Name on Card</label>
+                    <input
+                      type="text"
+                      id="cname"
+                      name="cardname"
+                      placeholder="Ian Kiplagat"
+                    />
+                    <label for="ccnum">Credit card number</label>
+                    <input
+                      type="text"
+                      id="ccnum"
+                      name="cardnumber"
+                      placeholder="1111-2222-3333-4444"
+                    />
+                    <label for="expmonth">Exp Month</label>
+                    <input
+                      type="text"
+                      id="expmonth"
+                      name="expmonth"
+                      placeholder="February"
+                    />
+  
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input
+                          type="text"
+                          id="expyear"
+                          name="expyear"
+                          placeholder="2023"
+                        />
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input
+                          type="text"
+                          id="cvv"
+                          name="cvv"
+                          placeholder="157"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <label>
+                    <!-- <input type="checkbox" checked="checked" name="address"> -->
+                    <ul>
+                      <option value="delivery">Delivery</option>
+                      <option value="pickup">Pickup</option>
+                    </ul>
+                  </label>
                 </div>
-
-                <div class="col-50">
-                  <h3>Payment</h3>
-                  <label for="fname">Accepted Payment Methods</label>
-                  <div class="payment-container">
-                    <ol>
-                      <li>Card</li>
-                      <li>Mobile money</li>
-                      <li>Cash</li>
-                    </ol>
-                  </div>
-                  <br />
-                  <label for=""><strong>For card:</strong></label>
-                  <label for="cname">Name on Card</label>
-                  <input
-                    type="text"
-                    id="cname"
-                    name="cardname"
-                    placeholder="Ian Kiplagat"
-                  />
-                  <label for="ccnum">Credit card number</label>
-                  <input
-                    type="text"
-                    id="ccnum"
-                    name="cardnumber"
-                    placeholder="1111-2222-3333-4444"
-                  />
-                  <label for="expmonth">Exp Month</label>
-                  <input
-                    type="text"
-                    id="expmonth"
-                    name="expmonth"
-                    placeholder="February"
-                  />
-
-                  <div class="row">
-                    <div class="col-50">
-                      <label for="expyear">Exp Year</label>
-                      <input
-                        type="text"
-                        id="expyear"
-                        name="expyear"
-                        placeholder="2023"
-                      />
-                    </div>
-                    <div class="col-50">
-                      <label for="cvv">CVV</label>
-                      <input
-                        type="text"
-                        id="cvv"
-                        name="cvv"
-                        placeholder="157"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <label>
-                  <!-- <input type="checkbox" checked="checked" name="address"> -->
-                  <ul>
-                    <option value="delivery">Delivery</option>
-                    <option value="pickup">Pickup</option>
-                  </ul>
-                </label>
-              </div>
-              <input
-                type="submit"
-                onclick="order()"
-                value="Continue to checkout"
-                class="btn"
-              />
-            </form>
+                <input
+                  type="submit"
+                  onclick="order()"
+                  value="Continue to checkout"
+                  class="btn"
+                />
+              </form>
+            </div>
           </div>
-        </div>
-
-        <div class="col-25">
-          <div class="container">
-            <h4>
-              Order Summary
-              <span class="price" style="color: black">
-                <i class="fa fa-shopping-cart"></i>
-                <b>4</b>
-              </span>
-            </h4>
-            <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-            <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-            <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-            <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-            <hr />
-            <p>
-              Total <span class="price" style="color: black"><b>$30</b></span>
-            </p>
+  
+          <div class="col-25">
+            <div class="container">
+              <h4>
+                Order Summary
+                <span class="price" style="color: black">
+                  <i class="fa fa-shopping-cart"></i>
+                  <b>4</b>
+                </span>
+              </h4>
+              <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+              <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+              <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+              <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+              <hr />
+              <p>
+                Total <span class="price" style="color: black"><b>$30</b></span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
