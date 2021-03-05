@@ -1,7 +1,7 @@
 .order-bg {
   background: url(/images/2.jpg);
   padding-top: 5px;
-  padding-bottom: 55px;
+  padding-bottom: 25px;
 }
 
 .row {
@@ -35,13 +35,13 @@
 
 .container {
   background-color: #f2f2f2;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 15px 20px;
   margin-top: 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
 
-input[type=text] {
+input[type="text"] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -55,7 +55,7 @@ label {
 }
 
 .btn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 12px;
   margin: 10px 0;
