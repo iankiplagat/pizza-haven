@@ -32,13 +32,13 @@
             <div class="container">
               <form>
                 <div class="row">
-                  <div class="col-50">
+                  <div class="col-50" id="place-order">
                     <h3>Enter your order details</h3>
                     <label for="pizza-name"
                       ><i class="fa fa-shopping-cart order"></i>Type of
                       pizza</label
                     >
-                    <select id="pizzaSize" class="form-control">
+                    <select id="pizzaType" class="form-control">
                       <option selected>Select pizza..</option>
                       <option id="hawaiian">Hawaiian Pizza</option>
                       <option id="cheese">Cheese Pizza</option>
@@ -83,6 +83,7 @@
                           id="quantity"
                           name="pizza-quantity"
                           placeholder="1"
+                          required
                         />
                       </div>
                     </div>
@@ -142,7 +143,28 @@
                     </div>
                   </div>
                 </div>
-                <div class="row address">
+                <div class="delivery-pickup">
+                  <h3>Delivery or pickup?</h3>
+                  <label>
+                    <input
+                      class="deliver-option"
+                      type="radio"
+                      name="Yes-No"
+                      onclick="myFunction()"
+                    />
+                    Delivery
+                  </label>
+                  <label>
+                    <input
+                      class="deliver-option"
+                      type="radio"
+                      name="Yes-No"
+                      onclick="myFunctionOne()"
+                    />
+                    Pickup
+                  </label>
+                </div>
+                <div class="row address" id="deliver-order">
                   <div class="col-50">
                     <label for="adr"
                       ><i class="fa fa-address-card-o"></i
@@ -154,6 +176,7 @@
                       id="adr"
                       name="address"
                       placeholder="89 Riverside House No.2"
+                      required
                     />
                   </div>
                 </div>
@@ -169,25 +192,23 @@
 
           <div class="col-25">
             <div class="container">
-              <h4>
-                Order Summary
-                <span class="price" style="color: black">
-                  <i class="fa fa-shopping-cart"></i>
-                </span>
-              </h4>
-              <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-              <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-              <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-              <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-              <hr />
-              <p>
-                Total <span class="price" style="color: black"><b>$30</b></span>
-              </p>
+              <div id="order-summary">
+                <h4>
+                  Order Summary
+                  <span class="price" style="color: black">
+                    <i class="fa fa-shopping-cart"></i>
+                  </span>
+                </h4>
+               <p>Your order summary is......</p>
+                  Total <span class="price" style="color: black"><b>$30</b></span>
+                </p>
+              </div>
               <input
                 type="submit"
                 onclick="checkout()"
                 value="Checkout"
                 class="btn"
+                id="final-order"
               />
             </div>
           </div>
@@ -197,12 +218,6 @@
     <footer class="footer">
       <div class="icon">
         <img class="f-links" src="images/facebook.png" alt="facebook" />
-        <img
-          class="f-links"
-          src="images/instagram.png"
-          width="9%"
-          alt="instagram"
-        />
         <img class="f-links" src="images/twitter.png" alt="twitter" />
         <img class="f-links" src="images/g_plus.png" alt="g_plus" />
       </div>
