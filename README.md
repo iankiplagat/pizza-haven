@@ -6,11 +6,12 @@
 
 ## Description
 
-This is an application that will enable a user to make a pizza order online. Customers can specify the type of pizza, the size,the type of crust, and add additional toppings they desire. If a customer wants the pizza delivered, he/she will be prompted to enter their location and contact details. On checkout the user is informed of the total cost of the order.
+This is an application that will enable a user to make a pizza order online. Customers can specify the type of pizza, the size, the type of crust, and add additional toppings they desire. If a customer wants the pizza delivered, he/she will be prompted to enter their location and contact details. On checkout the user is informed of the total cost of the order.
 
 ## Setup/Installation Requirements
 
-- To have the project up and running you may need:
+To have the project up and running you may need:
+
 - To clone or download this project from github https://github.com/kasparov-creat/pizza-haven.git to a local computer.
 - Use a text editor like atom, notepad,visual studio code or any other to view the code.
 - use a web browser to open it in order to have a look and feel of the site.
@@ -24,7 +25,7 @@ The website is expected to function as follows:
 - Allow the user to input the type of crust they want. Different crust may have different sizes.
 - Allow the user to decide the toppings they want.
 - If the user wants a delivery, prompt the user to enter their location details and show the price for delivery.
-- On checkout,show the user the total amount payable.
+- On checkout, show the user the total amount payable.
 
 ## Known Bugs
 
