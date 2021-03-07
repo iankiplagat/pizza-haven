@@ -24,11 +24,12 @@ function myFunctionOne() {
 }
 
 function order() {
-  // document.getElementById("order-summary").innerHTML = Your order is 
+  // document.getElementById("order-summary").innerHTML = Your order is
 }
 
 function checkout() {
   document.getElementById("final-order");
+  prompt("Please enter your phone number");
   alert(
     "Your order is being processed. It will be delivered to your location soon if delivery option was selected. Thank you"
   );
