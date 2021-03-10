@@ -61,9 +61,10 @@ input[type="text"] {
   border-radius: 3px;
 }
 
-/* #order-summary {
+#order-summary {
   display: none;
-} */
+}
+
 label {
   margin-bottom: 10px;
   display: block;
